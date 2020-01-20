@@ -42,7 +42,7 @@ supply = defaultdict(list,[(k,box[k]) for k in random10])
 #The supply always has these cards
 supply["Copper"]=[Dominion.Copper()]*(60-len(player_names)*7)
 supply["Silver"]=[Dominion.Silver()]*30
-supply["Gold"]=[Dominion.Gold()]*40     #flipped amount of fold and silver cards
+supply["Gold"]=[Dominion.Gold()]*40     #flipped amount of gold and silver cards
 supply["Estate"]=[Dominion.Estate()]*nV
 supply["Duchy"]=[Dominion.Duchy()]*nV
 supply["Province"]=[Dominion.Province()]*nV
