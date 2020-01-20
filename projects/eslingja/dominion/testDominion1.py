@@ -15,13 +15,13 @@ from projects.eslingja.dominion import testUtility
 player_names = ["Annie","*Ben","*Carla"]
 
 #number of curses and victory cards
-if len(player_names)>2:
+if len(player_names)>=2:            #adjusted this to >= so that no matter what the nv is 12
     nV=12
 else:
     nV=8
 nC = -10 + 10 * len(player_names)
 
-box = testUtility.GetBoxes()
+box = testUtility.GetBoxes(nV)
 
 supply_order = {0:['Curse','Copper'],2:['Estate','Cellar','Chapel','Moat'],
                 3:['Silver','Chancellor','Village','Woodcutter','Workshop'],
